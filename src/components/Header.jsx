@@ -2,9 +2,13 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div>
-      
-    </div>
+    <header className="container-fluid">
+      <div className="row">
+        <div className="col-12">
+          <h1>BolMovies</h1>
+        </div>
+      </div>
+    </header>
   )
 }
 
