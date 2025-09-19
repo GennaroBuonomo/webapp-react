@@ -1,12 +1,10 @@
-import Header from "./components/Header"
+import DefaultLayout from "./layouts/DefaultLayout";
+import HomePage from "./pages/HomePage";
+import DetailMovie from "./pages/DetailMovie";
+import { BrowserRouter, Routers, Route  } from "react-router-dom";
 
 function App() {
-  return (
-    <>
-    <Header/>
-     <h1>HomePage</h1>
-    </>
-  )
+  return 
 }
 
 export default App
