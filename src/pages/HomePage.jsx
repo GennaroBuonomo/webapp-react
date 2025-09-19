@@ -10,7 +10,17 @@ const HomePage = () => {
             <i>Film per i veri appassionati</i>
           </h2>
         </div>
-        <div className="col-12"></div>
+      </div>
+      <div className="row gy-3">
+         <div className="col-12">
+          <div className="card-movie">
+            <img src="./public/Pirates of the Caribbean.jpeg" alt="Film" />
+            <div className="overlay">
+              <h2>Titolo del film</h2>
+              <p>autore</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
    )

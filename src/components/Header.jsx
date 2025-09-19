@@ -5,7 +5,7 @@ const Header = () => {
     <header className="container-fluid">
       <div className="row">
         <div className="col-12">
-          <img src="../public/Logo_movies.png" />
+          <img className="logo" src="../public/Logo_movies.png" />
           <h2 className="title-style">
             BoolMovies: <span className="fst-italic">Scegli il tuo film!</span>
           </h2>
