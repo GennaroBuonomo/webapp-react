@@ -3,11 +3,22 @@ body{
 }
 
 header{
-  background-color: #436f85;
+  background-color: #1f2121;
   color: #fff;
   padding: 15px 0px;
 }
 
 h1, h2, h3, h4, h5, h6{
- color: #436f85;
+ color: #1f2121;
+}
+
+img{
+  max-width: 100px;
+  vertical-align: middle;
+}
+
+.title-style{
+  vertical-align: middle;
+  display: inline-block;
+  color: #fff;
 }

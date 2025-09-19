@@ -10,6 +10,7 @@ const HomePage = () => {
             <i>Film per i veri appassionati</i>
           </h2>
         </div>
+        <div className="col-12"></div>
       </div>
     </div>
    )
