@@ -5,7 +5,7 @@ const Header = () => {
     <header className="container-fluid">
       <div className="row">
         <div className="col-12">
-          <h1>BolMovies</h1>
+          <h1>BoolMovies</h1>
         </div>
       </div>
     </header>
