@@ -11,7 +11,7 @@ const HomePage = () => {
           </h2>
         </div>
       </div>
-      <div className="row gy-3">
+      <div className="row gy-3 my-4">
          <div className="col-12">
           <div className="card-movie">
             <img src="./public/Pirates of the Caribbean.jpeg" alt="Film" />
