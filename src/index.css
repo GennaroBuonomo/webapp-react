@@ -3,10 +3,12 @@ body{
 }
 
 header{
-  background-color: #1f2121;
+  background-color: #5f055f;
   color: #fff;
   padding: 15px 0px;
 }
+
+
 
 .logo{
   max-width: 100px;
@@ -17,4 +19,37 @@ header{
   vertical-align: middle;
   display: inline-block;
   color: #fff;
+}
+
+.card-movie{
+  height: 610px;
+  border: 2px solid #5f055f;
+  position: relative;
+}
+
+.cover-movie-card{
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  background-color: #5f055f;
+  color: #fff;
+  opacity: 0;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-movie:hover .overlay{
+  opacity: 0.75;
 }

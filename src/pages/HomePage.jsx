@@ -1,5 +1,3 @@
-import React from 'react'
-
 const HomePage = () => {
   return (
     <div className="container my-5">
@@ -10,14 +8,14 @@ const HomePage = () => {
             <i>Film per i veri appassionati</i>
           </h2>
         </div>
-      </div>
-      <div className="row gy-3 my-4">
-         <div className="col-12">
-          <div className="card-movie">
-            <img src="./public/Pirates of the Caribbean.jpeg" alt="Film" />
-            <div className="overlay">
-              <h2>Titolo del film</h2>
-              <p>autore</p>
+        <div className="row gy-3">
+          <div className="col-12 col-md-6 col-lg-4">
+            <div className="card-movie">
+              <img src="./imgs/spiderman.jpeg" className="cover-movie-card" alt="film" />
+              <div className="overlay">
+                <h1>Titolo del film</h1>
+                <p>direttore delle riprese</p>
+              </div>
             </div>
           </div>
         </div>
