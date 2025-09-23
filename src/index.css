@@ -53,3 +53,47 @@ header{
 .card-movie:hover .overlay{
   opacity: 0.75;
 }
+
+.detail-card{
+  background-color: #5f055f;
+  margin: 50px 0px;
+}
+
+.cover-image{
+  width: 40%;
+}
+
+.cover-image img{
+  max-width: 470px;
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.text-details {
+  width: 60%;
+  color: #fff;
+  margin: 20px 0px;
+}
+
+.title{
+  font-size: 55px;
+}
+
+.director{
+  font-size: 40px;
+}
+
+.release-year, .genre{
+  font-size: 30px;
+}
+
+.abstract{
+  font-size: 20px;
+}
+
+.review-card{
+  border: 2px solid #5f055f;
+  padding: 25px;
+  border-radius: 25px;
+  color: #5f055f;
+}
