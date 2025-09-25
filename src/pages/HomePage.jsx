@@ -1,15 +1,21 @@
 import axios from "axios"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useContext } from "react"
 import { Link } from "react-router-dom";
+
+import GlobalContext from "../contexts/globalContext";
+
 
 const HomePage = () => {
   //Definisco le variabili di stato
   const [movies, setMovies] = useState([]);
+  const { setIsLoading } = useContext(GlobalContext);
 
   //funzione che recupera i film con la chiamata ajax
   const fetchMovies = () => {
+    setIsLoading(true);
     axios.get("http://localhost:3000/api/movies").then((resp) => {
-      setMovies(resp.data)
+      setMovies(resp.data);
+      setIsLoading(false);
     })
   };
 

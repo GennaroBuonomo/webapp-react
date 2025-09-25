@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import GlobalContext from "../contexts/globalContext";
 
 import ReviewForm from "../components/ReviewForm";
 
@@ -11,10 +12,14 @@ const DetailMovie = () => {
   //Definisco la variabile di stato
   const [movie, setMovie] = useState({})
 
+  const {setIsLoading} = useContext(GlobalContext);
+
   //Definisco il metodo che mi effettua la chiamata ajax per recuperare il libro attraverso l'id
   const fetchMovie = () => {
+    setIsLoading(true)
     axios.get(`http://localhost:3000/api/movies/${id}`).then((resp) => {
       setMovie(resp.data);
+      setIsLoading(false);
     })
     .catch((err) => console.log(err));
   };
