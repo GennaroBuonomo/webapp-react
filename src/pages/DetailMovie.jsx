@@ -2,6 +2,8 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 
+import ReviewForm from "../components/ReviewForm";
+
 const DetailMovie = () => {
   //Recupero l'id passato alla rotta
   const { id } = useParams();
@@ -46,6 +48,9 @@ const DetailMovie = () => {
               </div>
             );
           })}
+        </div>
+        <div className="review-form">
+          <ReviewForm movieId={id} reloadReviews={fetchMovie} />
         </div>
       </div>
     </div>

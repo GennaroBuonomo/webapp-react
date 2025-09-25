@@ -97,3 +97,17 @@ header{
   border-radius: 25px;
   color: #5f055f;
 }
+
+.detail-card-2{
+  background-color: #5f055f;
+  margin: 50px 0px;
+  padding: 10px;
+}
+
+.btn-secondary{
+  border-radius: 20px;
+  padding: 5px 30px;
+  color: #fff;
+  background-color: #5f055f;
+  border: 2px solid;
+}
